@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thrively｜法的情報</title>
+<style>
+  :root {
+    --primary: #FF7A00;
+    --text: #1a1a1a;
+    --text-sub: #666;
+    --border: #e5e5e5;
+    --bg: #ffffff;
+    --bg-soft: #fafafa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .logo {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+  .tagline {
+    color: var(--text-sub);
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .intro {
+    text-align: center;
+    color: var(--text-sub);
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .link-card {
+    display: block;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .link-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-1px);
+  }
+  .link-card.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  .link-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .link-desc {
+    font-size: 13px;
+    color: var(--text-sub);
+    margin: 0;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--bg-soft);
+    color: var(--text-sub);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: auto;
+  }
+  .arrow {
+    margin-left: auto;
+    color: var(--primary);
+    font-size: 18px;
+  }
+  .contact {
+    margin-top: 48px;
+    padding: 20px 24px;
+    background: var(--bg-soft);
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  .contact-label {
+    color: var(--text-sub);
+    font-size: 12px;
+    margin: 0 0 4px;
+  }
+  .contact a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-sub);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1 class="logo">Thrively</h1>
+  <p class="tagline">Todo × Diary × AI Lifelog</p>
+</header>
+<p class="intro">Thrivelyに関する法的情報・各種規約をご案内します。</p>
+<div class="links">
+  <a href="./privacy.html" class="link-card">
+    <p class="link-title">プライバシーポリシー <span class="arrow">→</span></p>
+    <p class="link-desc">取得する情報、利用目的、データの取扱いについて</p>
+  </a>
+  <a href="./eula.html" class="link-card">
+    <p class="link-title">利用規約(EULA) <span class="arrow">→</span></p>
+    <p class="link-desc">本サービスの利用条件・禁止事項について</p>
+  </a>
+  <div class="link-card disabled">
+    <p class="link-title">特定商取引法に基づく表記 <span class="badge">準備中</span></p>
+    <p class="link-desc">運営者情報、課金、解約に関する表記</p>
+  </div>
+</div>
+<div class="contact">
+  <p class="contact-label">お問い合わせ</p>
+  <a href="mailto:thrively.app.official@gmail.com">thrively.app.official@gmail.com</a>
+</div>
+<footer>
+  © Thrively. All rights reserved.
+</footer>
+</div>
+</body>
+</html>
